@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rian Movies - 4 Grid Stylish Layout</title>
+  <style>
+    body {
+      background-color: #fff0e1;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #222;
+      letter-spacing: 1px;
+    }
+    .movie-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 15px;
+      background-color: #e0f7ff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+    .item {
+      background-color: #fefefe;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .item1 {
+      position: sticky;
+      top: 0;
+      grid-column: 1 / 3;
+      font-size: 24px;
+      font-weight: bold;
+      color: #1e3a8a;
+      z-index: 10;
+    }
+    .item2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+    .item3 {
+      font-size: 15px;
+      text-align: justify;
+      line-height: 1.6;
+    }
+    .item4, .item5 {
+      background-color: #f0f9ff;
+      font-size: 14px;
+      padding: 12px;
+      line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+      .movie-block { grid-template-columns: 1fr; }
+      .item1 { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+<h2>VAR Movies</h2>
+
+<!-- Retro -->
+<section class="movie-block">
+  <header class="item item1">Retro</header>
+  <div class="item item2">
+    <img src="https://m.media-amazon.com/images/M/MV5BYzZjYzU0OGMtODI1OS00MjU5LThlOTAtZjY2NmZlOTVlMmE5XkEyXkFqcGc@._V1_.jpg" alt="Retro movie poster" />
+  </div>
+  <div class="item item3">
+    <strong>Retro</strong> (May 1, 2025) is a Tamil-language action thriller directed by Karthik Subbaraj starring Suriya as Paarivel, a gangster who vows to give up violence for his love, played by Pooja Hegde :contentReference[oaicite:2]{index=2}. Supporting cast includes Prakash Raj, Joju George, Jayaram, and Nassar. The narrative follows Paarivel’s struggle to leave his criminal life behind to lead a peaceful married life :contentReference[oaicite:3]{index=3}.
+    <br><br>
+    Critics praised the action choreography and performances of Suriya and Pooja, though some described the screenplay as uneven; it averages around a 3.5/5 review from regional critics :contentReference[oaicite:4]{index=4}.
+  </div>
+  <div class="item item4">
+    <strong>Genre:</strong> Action, Thriller<br>
+    <strong>Director:</strong> Karthik Subbaraj<br>
+    <strong>Music:</strong> Santhosh Narayanan<br>
+  </div>
+  <div class="item item5">
+    <strong>Cast:</strong> Suriya, Pooja Hegde, Prakash Raj, Joju George, Jayaram, Nassar<br>
+    <strong>Rating:</strong> 🎥 ~3.5/5 (regional critics)<br>
+    <strong>Release:</strong> 1 May 2025
+  </div>
+</section>
+
+<!-- Good Night -->
+<section class="movie-block">
+  <header class="item item1">Good Night</header>
+  <div class="item item2">
+    <img src="https://m.media-amazon.com/images/M/MV5BMTI2NTFhZjUtMjM1Mi00ZGU0LWI3MTQtNjU0MzYzNGFhODYwXkEyXkFqcGc@._V1_.jpg" alt="Good Night movie poster" />
+  </div>
+  <div class="item item3">
+    A Tamil-language romantic comedy released on 12 May 2023, directed and written by Vinayak Chandrasekaran :contentReference[oaicite:5]{index=5}. The story follows Mohan (Manikandan), an IT professional whose loud snoring becomes a significant obstacle in his budding relationship with Anu (Meetha Raghunath) :contentReference[oaicite:6]{index=6}.
+    <br><br>
+    Critics appreciated the film’s heartwarming portrayal of everyday domestic life and Manikandan’s performance, lighting a balance between warmth and humor :contentReference[oaicite:7]{index=7}.
+  </div>
+  <div class="item item4">
+    <strong>Genre:</strong> Romantic Comedy, Drama<br>
+    <strong>Director:</strong> Vinayak Chandrasekaran<br>
+    <strong>Music:</strong> Sean Roldan<br>
+  </div>
+  <div class="item item5">
+    <strong>Cast:</strong> Manikandan, Meetha Raghunath, Ramesh Thilak, Raichal Rabecca, Bagavathi Perumal<br>
+    <strong>Runtime:</strong> 142 min<br>
+    <strong>Release:</strong> 12 May 2023
+  </div>
+</section>
+
+<!-- 96 -->
+<section class="movie-block">
+  <header class="item item1">96</header>
+  <div class="item item2">
+    <img src="https://m.media-amazon.com/images/M/MV5BNGY0ZTFjMzctYjU3Ni00MjNmLWFmZmYtZjQ0MWIzNjVlYWY4XkEyXkFqcGc@._V1_.jpg" alt="96 movie poster" />
+  </div>
+  <div class="item item3">
+    <strong>96</strong> (4 October 2018) is a Tamil-language romantic drama directed by C. Prem Kumar, starring Vijay Sethupathi (as Ram) and Trisha Krishnan (as Janaki) :contentReference[oaicite:8]{index=8}. The film centers on a high-school reunion rekindling memories of their first love, delivering deep nostalgia and emotional resonance :contentReference[oaicite:9]{index=9}.
+    <br><br>
+    Universally praised for its screenplay, music by Govind Vasantha, cinematography, and the heartfelt performances of Trisha and Vijay, it became a blockbuster and won multiple awards :contentReference[oaicite:10]{index=10}.
+  </div>
+  <div class="item item4">
+    <strong>Genre:</strong> Romance, Drama<br>
+    <strong>Director:</strong> C. Prem Kumar<br>
+    <strong>Music:</strong> Govind Vasantha<br>
+  </div>
+  <div class="item item5">
+    <strong>Cast:</strong> Vijay Sethupathi, Trisha Krishnan, Adithya Bhaskar, Gouri Kishan<br>
+    <strong>Runtime:</strong> 152 min<br>
+    <strong>Release:</strong> 4 Oct 2018
+  </div>
+</section>
+
+</body>
+</html>
